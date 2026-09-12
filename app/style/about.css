@@ -1,0 +1,101 @@
+.about-page-container {
+    padding: 1rem 0 2rem; /* 16px 0 32px */
+}
+
+.about-hero-image {
+    width: 100vw;
+    height: min-content;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.about-page-content {
+    padding-inline: 1.5rem; /* 24px */
+    color: var(--black-main);
+    margin-bottom: 3.375rem; /* 54px */
+}
+
+.about-page-content h1 {
+    line-height: 2.375rem; /* 38px */
+}
+
+.about-page-content p {
+    line-height: 1.375rem; /* 22px */
+}
+
+.about-page-cta {
+    background-color: var(--orange-light);
+    color: var(--black-main);
+    padding: 0 2rem 2rem; /* 0 32px 32px */
+    margin-inline: 1.625rem; /* 26px */
+}
+
+.about-page-cta h2 {
+    margin: 0;
+    padding: 2.25rem 0; /* 36px 0 */
+}
+
+.about-page-cta .btn {
+    background-color: var(--black-main);
+    color: white;
+}
+
+/* <-- MEDIA QUERIES --> */
+
+/* <-- TABLET --> */
+
+@media only screen and (min-width: 768px) {
+
+    .about-page-container {
+        background-image: url('/about-hero.jpg');
+        background-position: center 45%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #636c8d;
+        background-blend-mode: multiply;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1.5rem; /* 64px 24px */
+        font-size: 110%;
+    }
+
+    .about-page-content {
+        color: var(--bg-light);
+        max-width: 1000px;
+        padding-inline: 1.75rem; /* 28px */
+    }
+
+    .about-page-content,
+    .about-page-cta h2 {
+        text-shadow: var(--text-shadow-main);
+    }
+
+    .about-page-cta {
+        color: var(--orange-light);
+        background: none;
+        border-left: .75rem solid var(--orange-light); /* 12px */
+        margin: 2.25rem 1.75rem 2rem; /* 36px 28px 32px */
+        padding-bottom: 0;
+    }
+
+    .about-page-cta .btn {
+        background-color: var(--orange-light);
+        color: var(--black-main);
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .about-page-cta .btn:hover,
+    .about-page-cta .btn:focus {
+        background-color: var(--bg-light);
+    }
+
+    .about-page-cta h2 {
+        padding-block: 0 2.25rem; /* 0 36px */
+        font-size: 1.75rem; /* 28px */
+    }
+
+    .about-hero-image {
+        display: none;
+    }
+
+}
