@@ -37,7 +37,8 @@ export const authConfig = {
         signIn: '/login',
     },
     providers: [],
-    session: {
-        strategy: 'jwt',
-    }
+    session: { 
+        strategy: "jwt",
+        maxAge: 24 * 60 * 60, /* one day */
+    },
 } satisfies NextAuthConfig
