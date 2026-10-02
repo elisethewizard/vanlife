@@ -1,24 +1,24 @@
 :root {
-    --orange-main: #ff8c38;
-    --orange-light: #ffcc8d;
+    --orange-main: oklch(0.7527 0.167 52.6); /* #ff8c38 */
+    --orange-light: oklch(0.876 0.098 72); /* #ffcc8d */
 
-    --gray-main: #aaaaaa;
-    --gray-light: #e5e5e5;
+    --gray-main: oklch(0.738 0 0); /* #aaaaaa */
+    --gray-light: oklch(0.922 0 0); /* #e5e5e5 */
 
-    --beige-main: #ffead0;
-    --beige-transparent: rgba(255,234,208,0.5);
+    --beige-main: oklch(0.947 0.0412 73); /* #ffead0 */
+    --beige-transparent: oklch(0.947 0.0412 73 / 50%); /* rgba(255,234,208,0.5) */
 
-    --black-main: #161616;
-    --text-dark: #4d4d4d;
-    --bg-light: #fff7ed;
+    --black-main: var(--type-luxury);
+    --text-dark: oklch(0.42 0 0); /* #4d4d4d */
+    --bg-light: oklch(0.979 0.016 73.7); /* #fff7ed */
 
-    --type-simple: #e17654;
-    --type-rugged: #115e59;
-    --type-luxury: #161616; /* same as black-main */
+    --type-simple: oklch(0.68 0.142 38.3); /* #e17654 */
+    --type-rugged: oklch(0.437 0.0705 188.2); /* #115e59 */
+    --type-luxury: oklch(0.2 0 0); /* #161616 */
 
-    --text-shadow-main: #1d1d1d 1px 1px 5px,
-    #1d1d1d -1px -1px 5px;
-    --box-shadow-main: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    --text-shadow-main: oklch(0.23 0 0) 1px 1px 5px,
+    oklch(0.23 0 0) -1px -1px 5px; /* #1d1d1d */
+    --box-shadow-main: 0px 1px 2px oklch(0 0 0 / 5%);
 
     --font-main: var(--font-inter);
 }
@@ -294,9 +294,9 @@ footer {
 .home-container {
     min-height: 350px;
     padding: 2.875rem 1.75rem; /* 46px 28px */
-    background-color: #383330;
+    background-color: oklch(0.325 0.009 53.2); /* #383330 */
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-        url("/home-hero.jpg");
+        url("/home-hero.jpg"); /* darken the image for better contrast */
     background-position: center 30%;
     background-repeat: no-repeat;
     background-size: cover;

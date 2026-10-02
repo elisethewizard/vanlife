@@ -51,7 +51,7 @@
         background-position: center 45%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: #636c8d;
+        background-color: oklch(0.537 0.053 272.7); /* #636c8d */
         background-blend-mode: multiply;
         display: flex;
         flex-direction: column;

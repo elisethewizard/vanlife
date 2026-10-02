@@ -73,7 +73,7 @@ main:has(.host-nav) {
 }
 
 .host-dashboard-reviews {
-    background-color: #ffddb2;
+    background-color: oklch(0.915 0.067 73.3); /* #ffddb2 */
     padding-block: 1.625rem; /* 26px */
     display: flex;
     align-items: center;
@@ -402,11 +402,11 @@ button.secondary-nav-item:focus {
 }
 
 .review .info .date {
-    color: #8c8c8c;
+    color: oklch(0.64 0 0); /* #8c8c8c */
 }
 
 .review hr {
-    background-color: #c7c7c7;
+    background-color: oklch(0.83 0 0); /* #c7c7c7 */
     height: 1px;
     width: 100%;
     border: 0;
