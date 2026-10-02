@@ -57,12 +57,16 @@ An online marketplace app for renting vans made with React and Next.js. Features
 
 ## Screenshots
 
-![Screenshot of home page.](/public/screenshots/screenshot-1.png)
+<div>
+    <img src="public/screenshots/screenshot-1.png" alt="Screenshot of home page." width="416" />
+    <img src="public/screenshots/screenshot-2.png" alt="Screenshot of about page." width="416" />
+</div>
 
-![Screenshot of about page.](/public/screenshots/screenshot-2.png)
+<div>
+    <img src="public/screenshots/screenshot-3.png" alt="Screenshot of host dashboard." width="416" />
+    <img src="public/screenshots/screenshot-4.png" alt="Screenshot of a detailed card for a van hosted by a user." width="416" />
+</div>
 
-![Screenshot of host dashboard.](/public/screenshots/screenshot-3.png)
-
-![Screenshot of a detailed card for a van hosted by a user.](/public/screenshots/screenshot-4.png)
-
-![Screenshot of a list of available vans.](/public/screenshots/screenshot-5.png)
+<div>
+    <img src="public/screenshots/screenshot-5.png" alt="Screenshot of a list of available vans." width="416" />
+</div>
