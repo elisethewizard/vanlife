@@ -327,6 +327,7 @@ footer {
     font-size: 1.25rem; /* 20px */
     cursor: pointer;
     transition: all 0.25s ease-in-out;
+    text-shadow: none;
 }
 
 .home-container a:hover {
@@ -458,6 +459,7 @@ footer {
         margin-top: 1.3em;
         text-decoration: underline;
         padding-left: 0;
+        text-shadow: inherit;
     }
 
     .home-container a:hover {
