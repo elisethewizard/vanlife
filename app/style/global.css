@@ -177,7 +177,7 @@ main > section {
 /* <-- HEADER & NAV --> */
 
 header {
-    padding: 1rem 1.5rem; /* 16px 24px */
+    padding: .875rem 1rem; /* 14px 16px */
     display: flex;
     gap: .75rem; /* 12px */
     align-items: center;
@@ -188,7 +188,7 @@ header {
 .site-logo {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.25rem; /* 20px */
     line-height: 1.4;
     background-clip: text;
     transition: color 500ms ease-in-out;
@@ -423,6 +423,10 @@ footer {
 
     /* <-- TABLET HEADER NAV --> */
 
+    header {
+        padding: 1rem 1.5rem; /* 16px 24px */
+    }
+    
     header .site-logo {
         font-size: 1.625rem; /* 26px */
     }
