@@ -32,12 +32,12 @@ export default async function Page(
     return (
         <section className="max-w-[1400px] mx-auto">
             <Link href='/host/vans' className="back-button">
-                <BsArrowLeft className="icon" />
+                <BsArrowLeft className="icon" aria-hidden />
                 <span>Back to your vans</span>
             </Link>
             <div className="my-6 p-6 rounded-md bg-beige-transparent shadow-main lg:py-8 lg:px-12 lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-6">
                 <Image 
-                    src={van.image_url} 
+                    src={van.image_url}
                     alt={`Photo of ${van.name}`}
                     width={800}
                     height={800}

@@ -8,7 +8,7 @@ export default function DashReviews() {
             <h2 className="text-2xl font-bold">Review score</h2>
 
             <div className="flex items-center gap-1.5">
-                <BsStarFill className="text-orange-main text-2xl" />
+                <BsStarFill className="text-orange-main text-2xl" aria-label="Star" />
                 <p className="mr-auto text-dark-text text-xl">
                     <span className="text-black-main font-bold">
                         {userRating}

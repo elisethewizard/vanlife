@@ -6,8 +6,9 @@ export default function LogoutButton() {
         <button
             className='flex border-0 text-dark-text font-semibold cursor-pointer link-active:text-black-main link-active:underline link-active:decoration-1 md:text-lg'
             onClick={logOut}
+            aria-label="Logout"
         >
-            <BsXCircle className='icon' />
+            <BsXCircle className='icon' aria-hidden />
         </button>
     )
 }
