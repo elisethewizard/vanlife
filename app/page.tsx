@@ -1,6 +1,9 @@
+import Image from "next/image"
 import Link from "next/link"
+import bgImage from "@/public/home-hero.jpg"
 
-export default function Home() {
+export default async function Home() {
+    'use cache'
     return (
         <div 
             className="home-img min-h-[350] py-11.5 px-7 bg-position-[center_30%] bg-no-repeat bg-cover text-white text-shadow-main md:py-16 md:px-11.5 lg:px-16"
@@ -17,6 +20,16 @@ export default function Home() {
             >
                 Find your van
             </Link>
+
+            {/* background image */}
+            <Image
+                src={bgImage}
+                alt=""
+                className="hidden"
+                fetchPriority="high"
+                preload            
+            />
+            
         </div>
     )
 }

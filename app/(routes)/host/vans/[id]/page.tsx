@@ -5,6 +5,7 @@ import { fetchVan } from "@/app/lib/data"
 import Link from "next/link"
 import { BsArrowLeft } from "react-icons/bs"
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 
 export async function generateMetadata(
     props: { params: Promise<{ id: string }> }
@@ -35,9 +36,14 @@ export default async function Page(
                 <span>Back to your vans</span>
             </Link>
             <div className="my-6 p-6 rounded-md bg-beige-transparent shadow-main lg:py-8 lg:px-12 lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-6">
-                <img 
+                <Image 
                     src={van.image_url} 
+                    alt={`Photo of ${van.name}`}
+                    width={800}
+                    height={800}
                     className="hidden rounded-md lg:block"
+                    fetchPriority="high"
+                    preload
                 />
                 <div className="lg:pr-8">
                     <HostVansDetail van={van} />
