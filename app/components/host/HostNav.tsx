@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import NavLeaf from '../NavLeaf'
+import NavLeaf from '../header/NavLeaf'
 import { Suspense } from 'react'
 
 export default function HostNav() {
@@ -12,7 +12,7 @@ export default function HostNav() {
     ]
 
     return (
-        <nav className="host-nav secondary-nav">
+        <nav className="host-nav py-6 gap-y-2 gap-x-3 lg:gap-x-4">
             {links.map((link) => <Link
                 key={link.text}
                 href={link.href}

@@ -8,9 +8,7 @@ export default function NavLeaf(props: { href: string, end?: boolean }) {
     
     return (
         <div
-            style={{
-                display: 'none'
-            }}
+            className="hidden"
             data-active={ end ? pathname === href : pathname.startsWith(href) }
         />
     )

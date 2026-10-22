@@ -29,17 +29,17 @@ export default async function Page(
     }
 
     return (
-        <section>
-            <Link
-                href='/host/vans'
-                className="back-button"
-            >
+        <section className="max-w-[1400px] mx-auto">
+            <Link href='/host/vans' className="back-button">
                 <BsArrowLeft className="icon" />
                 <span>Back to your vans</span>
             </Link>
-            <div className="host-van-detail-layout-container b-shadow rounded">
-                <img src={van.image_url} className="rounded host-van-img desktop" />
-                <div>
+            <div className="my-6 p-6 rounded-md bg-beige-transparent shadow-main lg:py-8 lg:px-12 lg:grid lg:grid-cols-[2fr_3fr] lg:gap-x-6">
+                <img 
+                    src={van.image_url} 
+                    className="hidden rounded-md lg:block"
+                />
+                <div className="lg:pr-8">
                     <HostVansDetail van={van} />
                     <DetailBlocks van={van} />
                 </div>

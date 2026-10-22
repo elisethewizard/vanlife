@@ -9,7 +9,7 @@ export default async function VanList(
     const vans = await fetchVans(type)
 
     return (
-        <div className="van-list">
+        <div className="pt-12 grid grid-cols-2 gap-6.5 justify-items-center md:py-8 md:grid-cols-3 md:gap-7 lg:gap-y-8 lg:gap-x-11">
             { vans.map((van) => <VanOverviewCard key={van.id} from={type} {...van} />) }
         </div>
     )

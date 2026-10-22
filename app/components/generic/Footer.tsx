@@ -9,6 +9,8 @@ export default async function Footer() {
     const yearString = yearCurrent === yearStart ? yearStart.toString() : `${yearStart}-${yearCurrent}`
 
     return (
-        <footer>&#169; #VANLIFE {yearString}</footer>
+        <footer className="mt-auto p-5.5 flex justify-center items-center shrink-0 bg-black-main text-gray-main font-[350]">
+            &#169; #VANLIFE {yearString}
+        </footer>
     )
 }

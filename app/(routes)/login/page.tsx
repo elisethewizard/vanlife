@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
     return (
-        <div className="login-page">
+        <div className="max-w-[94vw] flex flex-col items-center justify-evenly [&>div]:w-fit">
             <Suspense fallback={<LoginSkeleton />}>
                 <LoginForm />
             </Suspense>

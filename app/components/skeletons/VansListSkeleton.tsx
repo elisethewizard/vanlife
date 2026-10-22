@@ -1,29 +1,12 @@
 export default function VansListSkeleton() {
     return (
-        <div className="van-list">
+        <div className="pt-12 grid grid-cols-2 gap-6.5 justify-items-center md:py-8 md:grid-cols-3 md:gap-7 lg:gap-y-8 lg:gap-x-11">
             {Array(6).fill('').map((_, idx) => <div
                 key={idx}
-                className="skeleton van-tile"
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    gap: '1rem'
-                }}
+                className="skeleton p-4 flex flex-col gap-4 shadow-main lg:py-5 lg:px-7"
             >
-                <div
-                    className="skeleton dark"
-                    style={{
-                        aspectRatio: '1 / 1'
-                    }}
-                />
-                <div
-                    className="skeleton dark"
-                    style={{
-                        flexGrow: 1,
-                        height: 90,
-                    }}
-                />
+                <div className="skeleton dark aspect-square" />
+                <div className="skeleton dark grow" style={{ height: 90 }} />
             </div>)}
         </div>
     )

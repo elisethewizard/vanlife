@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./style/global.css"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Header from "./components/header/Header"
+import Footer from "./components/generic/Footer"
 
 const inter = Inter({
     variable: "--font-inter",
@@ -18,11 +18,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
-        <html lang="en" className={inter.variable}>
-            <body>
-                <div className="site-wrapper">
+        <html lang="en" className={`${inter.variable} leading-[1.15] bg-bg-light font-main`}>
+            <body className="w-dvw max-w-full overflow-x-hidden overflow-y-auto">
+                <div className="flex flex-col min-h-dvh">
                     <Header />
-                    <main>{ children }</main>
+                    <main className="flex flex-col justify-center items-center grow [&>div]:grow *:w-full">
+                        { children }
+                    </main>
                     <Footer />
                 </div>
             </body>
