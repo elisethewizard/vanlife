@@ -8,7 +8,7 @@ export default async function FilterLinks(
     const vanTypes: VanType[] = ['simple', 'rugged', 'luxury']
 
     return (
-        <div className="filter-links">
+        <div className="flex gap-y-3 gap-x-5 flex-wrap">
 
             {vanTypes.map((vanType) => <Link
                 href={{
@@ -16,14 +16,14 @@ export default async function FilterLinks(
                     query: { type: vanType }
                 }}
                 key={vanType}
-                className={`filter-link van-type b-shadow rounded ${vanType} ${type === vanType ? 'selected' : ''}`}
+                className={`van-type ${vanType} ${type === vanType ? 'selected' : ''} filter-link`}
             >
                 {vanType}
             </Link>)}
 
             {type && <Link
                 href='/vans'
-                className="clear-filters filter-link van-type b-shadow rounded"
+                className="van-type filter-link bg-gray-main text-bg-light underline interact:bg-dark-text"
             >
                 Clear filter
             </Link>}

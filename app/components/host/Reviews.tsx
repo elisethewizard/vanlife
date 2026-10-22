@@ -5,7 +5,9 @@ export default async function Reviews() {
     const reviews = await getReviews() 
     return (
         <>
-            <h3>Reviews ({reviews.length})</h3>
+            <h3 className="mb-2 mt-[1em] text-[1.17em] font-bold">
+                Reviews ({reviews.length})
+            </h3>
             { reviews.map((review) => <Review {...review} key={review.id} />) }
         </>
     )

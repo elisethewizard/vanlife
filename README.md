@@ -7,8 +7,9 @@ An online marketplace app for renting vans made with React and Next.js. Features
 * **React 19** - UI library
 * **Next.js 16** (App Router) - server components
 * **TypeScript** - type safety
+* **Tailwind CSS 4** - utility-first styling
 * **Next Auth 5** - authentication with OAuth support
-* **PostgreSQL** - Database (Supabase)
+* **PostgreSQL** - database (Supabase)
 * **Zod** - schema validation
 
 ## Project structure

@@ -34,8 +34,10 @@ export default function Page(
     props: { searchParams: Promise<{ type?: VanType }> }
 ) {
     return (
-        <div className="van-selection-container">
-            <h1>Explore our van options</h1>
+        <div className="px-6 pb-16 md:px-12 md:max-w-[900px] lg:pt-5 lg:max-w-[1500px]">
+            <h1 className="my-[.67em] text-[2em] font-bold md:text-4xl lg:mt-0 lg:text-[2.5rem]">
+                Explore our van options
+            </h1>
             <Suspense fallback={<FilterLinksSkeleton />}>
                 <FilterLinks searchParams={props.searchParams} />
             </Suspense>

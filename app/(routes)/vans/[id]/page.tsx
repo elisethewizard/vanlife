@@ -27,8 +27,8 @@ export default function Page(
 ) {
 
     return (
-        <div className="van-detail-container">
-            <Suspense fallback={<div className='skeleton' style={{ width: 200, height: 35 }} />}>
+        <div className="px-6 pb-16 flex flex-col gap-5 md:px-10 md:max-w-[750px] lg:max-w-[1500px] lg:pt-5">
+            <Suspense fallback={<div className='skeleton w-[200px] h-[35px]' />}>
                 <BackButton searchParams={props.searchParams} />
             </Suspense>
             <Suspense fallback={<VanSkeleton />}>

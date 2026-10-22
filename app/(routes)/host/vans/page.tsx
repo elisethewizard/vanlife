@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
     return (
-        <section style={{ flexGrow: 0, }}>
+        <section>
+            <h1 className="mb-[.67em] font-bold text-[2rem] md:text-4xl lg:text-[2.5rem]">Your listed vans</h1>
             <Suspense fallback={<HostVansSkeleton />}>
                 <HostVansList />
             </Suspense>

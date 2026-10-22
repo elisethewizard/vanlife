@@ -10,30 +10,38 @@ export default function DetailBlocks(props: { van: VanDetail }) {
     const { name, type, price, description, image_url } = props.van
 
     function Details() {
+        const details = {
+            name: name,
+            category: type,
+            description: description,
+            visibility: "public"
+        }
         return (
-            <div className="host-van-detail">
-                <h4>Name: <span>{name}</span></h4>
-                <h4>Category: <span>{type}</span></h4>
-                <h4>Description: <span>{description}</span></h4>
-                <h4>Visibility: <span>Public</span></h4>
+            <div className="flex flex-col gap-4 text-black-main text-[.938rem]/[1.25rem] font-normal md:text-base">
+                {Object.entries(details).map((detail) => <h4 key={detail[0]}>
+                    <span className="font-bold capitalize">{detail[0]}: </span>
+                    {detail[1]}
+                </h4>)}
             </div>
         )
     }
 
     function Pricing() {
         return (
-            <h3 className="host-van-price">
+            <h3 className="text-2xl font-medium">
                 ${price}
-                <span>/day</span>
+                <span className="text-dark-text text-[1.063rem]">
+                    /day
+                </span>
             </h3>
         )
     }
 
     function Photos() {
         return (
-            <div className="host-van-detail-photos-cont">
+            <div className="flex gap-2 flex-wrap">
                 <Image
-                    className="host-van-detail-image rounded"
+                    className="h-[100px] w-auto rounded-md"
                     src={image_url}
                     alt={`Photo of ${name}.`}
                     height={100}
