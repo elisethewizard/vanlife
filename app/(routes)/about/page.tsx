@@ -15,7 +15,8 @@ export default function AboutPage() {
                 alt={`A photo of a woman sitting on the roof of a dark blue van. The light is switched on and it illuminates her from behind. It's night, and the woman looks up at the sky.`}
                 width={5304}
                 height={7952}
-                loading="eager"
+                fetchPriority="high"
+                preload
             />
             <div className="mb-13.5 px-6 text-black-main md:max-w-5xl md:px-7 md:text-bg-light md:text-shadow-main">
                 <h1 className='my-[.67em] text-[2em]/9.5 font-bold'>

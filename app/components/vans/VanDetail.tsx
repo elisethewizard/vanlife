@@ -22,8 +22,9 @@ export default async function VanDetail(
                 alt={`Photo of ${name}.`}
                 height={880}
                 width={880}
-                loading='eager'
                 className="h-min object-cover object-center rounded-md md:w-full md:aspect-4/3"
+                fetchPriority="high"
+                preload
             />
             <div className="w-full flex flex-col gap-3 lg:min-w-[300px] lg:pt-4">
                 <div className="flex flex-col gap-3 md:flex-row-reverse md:items-center md:justify-end md:gap-4">
