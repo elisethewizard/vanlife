@@ -17,7 +17,7 @@ export default async function BackButton(
             }}
             className="back-button"
         >
-            <BsArrowLeft size={'1.125rem'} />
+            <BsArrowLeft size={'1.125rem'} aria-hidden />
             <span>Back to {from || 'all'} vans</span>
         </Link>
     )

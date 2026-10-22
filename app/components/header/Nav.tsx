@@ -21,8 +21,12 @@ export default function Nav() {
                 {link.text}
             </NavItem>)}
 
-            <NavItem href="/login" classes='inline-flex items-center'>
-                <BsPersonCircle className='icon' />
+            <NavItem 
+                href="/login" 
+                className='inline-flex items-center' 
+                aria-label="Login"
+            >
+                <BsPersonCircle className='icon' aria-hidden />
             </NavItem>
 
             <LogoutButton />
